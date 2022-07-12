@@ -38,8 +38,8 @@
                         <p class="text">HTML5:</p>
                     </div>
                     <div class="skills">
-                        <p class="text skill" data-aos="zoom-in" data-aos-delay="50">BEM (Block Element Modificator)</p>
-                        <p class="text skill" data-aos="zoom-in" data-aos-delay="150">Semantic Layout</p>
+                        <p class="text skill">BEM (Block Element Modificator)</p>
+                        <p class="text skill">Semantic Layout</p>
                     </div>
                 </div>
                 <hr class="cross_line">
@@ -48,15 +48,15 @@
                         <p class="text ">CSS:</p>
                     </div>
                     <div class="skills">
-                        <p class="text skill" data-aos="zoom-in" data-aos-delay="50">Scss</p>
-                        <p class="text skill" data-aos="zoom-in" data-aos-delay="150">Bootstrap</p>
-                        <p class="text skill" data-aos="zoom-in" data-aos-delay="250">Materialize</p>
-                        <p class="text skill" data-aos="zoom-in" data-aos-delay="350">Responsive Layout</p>
-                        <p class="text skill" data-aos="zoom-in" data-aos-delay="450">Adaptive Layout</p>
-                        <p class="text skill" data-aos="zoom-in" data-aos-delay="550">Flexbox</p>
-                        <p class="text skill" data-aos="zoom-in" data-aos-delay="650">Grid</p>
-                        <p class="text skill" data-aos="zoom-in" data-aos-delay="750">Mobile First</p>
-                        <p class="text skill" data-aos="zoom-in" data-aos-delay="850">Desktop First</p>
+                        <p class="text skill">Scss</p>
+                        <p class="text skill">Bootstrap</p>
+                        <p class="text skill">Materialize</p>
+                        <p class="text skill">Responsive Layout</p>
+                        <p class="text skill">Adaptive Layout</p>
+                        <p class="text skill">Flexbox</p>
+                        <p class="text skill">Grid</p>
+                        <p class="text skill">Mobile First</p>
+                        <p class="text skill">Desktop First</p>
                     </div>
                 </div>
                 <hr class="cross_line">
@@ -65,15 +65,15 @@
                         <p class="text">JavaScript:</p>
                     </div>
                     <div class="skills">
-                        <p class="text skill" data-aos="zoom-in" data-aos-delay="50">ES6+</p>
-                        <p class="text skill" data-aos="zoom-in" data-aos-delay="150">DOM</p>
-                        <p class="text skill" data-aos="zoom-in" data-aos-delay="250">REST API</p>
-                        <p class="text skill" data-aos="zoom-in" data-aos-delay="350">Websocket</p>
-                        <p class="text skill" data-aos="zoom-in" data-aos-delay="450">NPM</p>
-                        <p class="text skill" data-aos="zoom-in" data-aos-delay="550">Vue.js</p>
-                        <p class="text skill" data-aos="zoom-in" data-aos-delay="650">Vue CLI</p>
-                        <p class="text skill" data-aos="zoom-in" data-aos-delay="750">Vuex</p>
-                        <p class="text skill" data-aos="zoom-in" data-aos-delay="850">Vue Router</p>
+                        <p class="text skill">ES6+</p>
+                        <p class="text skill">DOM</p>
+                        <p class="text skill">REST API</p>
+                        <p class="text skill">Websocket</p>
+                        <p class="text skill">NPM</p>
+                        <p class="text skill">Vue.js</p>
+                        <p class="text skill">Vue CLI</p>
+                        <p class="text skill">Vuex</p>
+                        <p class="text skill">Vue Router</p>
                     </div>
                 </div>
                 <hr class="cross_line">
@@ -82,11 +82,11 @@
                         <p class="text">Other:</p>
                     </div>
                     <div class="skills">
-                        <p class="text skill" data-aos="zoom-in" data-aos-delay="50">Figma</p>
-                        <p class="text skill" data-aos="zoom-in" data-aos-delay="150">Photoshop</p>
-                        <p class="text skill" data-aos="zoom-in" data-aos-delay="250">Git</p>
-                        <p class="text skill" data-aos="zoom-in" data-aos-delay="350">GitHub</p>
-                        <p class="text skill" data-aos="zoom-in" data-aos-delay="450">Heroku</p>
+                        <p class="text skill">Figma</p>
+                        <p class="text skill">Photoshop</p>
+                        <p class="text skill">Git</p>
+                        <p class="text skill">GitHub</p>
+                        <p class="text skill">Heroku</p>
                     </div>
                 </div>
             </div>
@@ -227,10 +227,13 @@ export default {
 }
 
 .social__img {
-    width: 100%;
+    width: 30px;
     height: 30px;
     transition: all 0.5s ease 0s;
 
+    &:hover {
+        transform: scale(1.5);
+    }
 }
 
 .phone__link {
@@ -377,6 +380,7 @@ export default {
     }
 
     .social__img {
+        width: 20px;
         height: 20px;
     }
 
@@ -400,7 +404,7 @@ export default {
     }
 }
 
-@media(max-width: 680px) {
+@media(max-width: 730px) {
 
     .background {
         height: 135rem;
@@ -414,10 +418,16 @@ export default {
         width: 30%;
     }
 
+    .skill {
+        margin: 0;
+    }
+
     .skills {
         display: grid;
         align-items: center;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5px;
+        text-align: center;
     }
 
     .technical_skills {
@@ -458,6 +468,7 @@ export default {
     }
 
     .social__img {
+        width: 15px;
         height: 15px;
     }
 
@@ -467,6 +478,10 @@ export default {
 
     .phone__link {
         font-size: 12px;
+    }
+
+    .skills {
+        grid-template-columns: 1fr 1fr;
     }
 
     .skill {
@@ -497,6 +512,7 @@ export default {
     }
 
     .about_me__content {
+        width: 85%;
         padding: 15px 10px;
     }
 }

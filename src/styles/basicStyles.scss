@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html body {
+    overflow-x: hidden;
+}
+
 .container {
     width: 90%;
     margin: 0 auto;
@@ -86,5 +90,5 @@ a {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
