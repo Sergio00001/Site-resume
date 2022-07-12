@@ -13,7 +13,7 @@ export default {
 
   mounted() {
     AOS.init({
-      anchorPlacement: 'center-top'
+      anchorPlacement: 'bottom-bottom'
     })
   }
 }

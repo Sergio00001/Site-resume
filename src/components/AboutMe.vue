@@ -119,13 +119,13 @@
             <div class="content__soft_skills">
                 <h3 class="title soft_skills">Soft Skills:</h3>
                 <div class="skills">
-                    <p class="text skill" data-aos="zoom-in" data-aos-delay="50">Self-management</p>
-                    <p class="text skill" data-aos="zoom-in" data-aos-delay="150">Time management</p>
-                    <p class="text skill" data-aos="zoom-in" data-aos-delay="250">Creativity</p>
-                    <p class="text skill" data-aos="zoom-in" data-aos-delay="350">Attention to detail</p>
-                    <p class="text skill" data-aos="zoom-in" data-aos-delay="450">Optimism</p>
-                    <p class="text skill" data-aos="zoom-in" data-aos-delay="550">Self-motivation</p>
-                    <p class="text skill" data-aos="zoom-in" data-aos-delay="650">Self-control</p>
+                    <p class="text skill" data-aos="fade-down" data-aos-delay="50">Self-management</p>
+                    <p class="text skill" data-aos="fade-up" data-aos-delay="150">Time management</p>
+                    <p class="text skill" data-aos="fade-down" data-aos-delay="250">Creativity</p>
+                    <p class="text skill" data-aos="fade-up" data-aos-delay="350">Attention to detail</p>
+                    <p class="text skill" data-aos="fade-down" data-aos-delay="450">Optimism</p>
+                    <p class="text skill" data-aos="fade-up" data-aos-delay="550">Self-motivation</p>
+                    <p class="text skill" data-aos="fade-down" data-aos-delay="650">Self-control</p>
                 </div>
             </div>
             <div class="go_projects_btn">
@@ -508,7 +508,7 @@ export default {
     }
 
     .go_projects_btn {
-        margin: 30px auto;
+        margin: 50px auto;
     }
 
     .about_me__content {
