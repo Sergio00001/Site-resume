@@ -38,8 +38,8 @@
                         <p class="text">HTML5:</p>
                     </div>
                     <div class="skills">
-                        <p class="text skill">BEM (Block Element Modificator)</p>
-                        <p class="text skill">Semantic Layout</p>
+                        <p class="text skill" data-aos="zoom-in" data-aos-delay="50">BEM (Block Element Modificator)</p>
+                        <p class="text skill" data-aos="zoom-in" data-aos-delay="150">Semantic Layout</p>
                     </div>
                 </div>
                 <hr class="cross_line">
@@ -48,15 +48,15 @@
                         <p class="text ">CSS:</p>
                     </div>
                     <div class="skills">
-                        <p class="text skill">Scss</p>
-                        <p class="text skill">Bootstrap</p>
-                        <p class="text skill">Materialize</p>
-                        <p class="text skill">Responsive Layout</p>
-                        <p class="text skill">Adaptive Layout</p>
-                        <p class="text skill">Flexbox</p>
-                        <p class="text skill">Grid</p>
-                        <p class="text skill">Mobile First</p>
-                        <p class="text skill">Desktop First</p>
+                        <p class="text skill" data-aos="zoom-in" data-aos-delay="50">Scss</p>
+                        <p class="text skill" data-aos="zoom-in" data-aos-delay="150">Bootstrap</p>
+                        <p class="text skill" data-aos="zoom-in" data-aos-delay="250">Materialize</p>
+                        <p class="text skill" data-aos="zoom-in" data-aos-delay="350">Responsive Layout</p>
+                        <p class="text skill" data-aos="zoom-in" data-aos-delay="450">Adaptive Layout</p>
+                        <p class="text skill" data-aos="zoom-in" data-aos-delay="550">Flexbox</p>
+                        <p class="text skill" data-aos="zoom-in" data-aos-delay="650">Grid</p>
+                        <p class="text skill" data-aos="zoom-in" data-aos-delay="750">Mobile First</p>
+                        <p class="text skill" data-aos="zoom-in" data-aos-delay="850">Desktop First</p>
                     </div>
                 </div>
                 <hr class="cross_line">
@@ -65,15 +65,15 @@
                         <p class="text">JavaScript:</p>
                     </div>
                     <div class="skills">
-                        <p class="text skill">ES6+</p>
-                        <p class="text skill">DOM</p>
-                        <p class="text skill">REST API</p>
-                        <p class="text skill">Websocket</p>
-                        <p class="text skill">NPM</p>
-                        <p class="text skill">Vue.js</p>
-                        <p class="text skill">Vue CLI</p>
-                        <p class="text skill">Vuex</p>
-                        <p class="text skill">Vue Router</p>
+                        <p class="text skill" data-aos="zoom-in" data-aos-delay="50">ES6+</p>
+                        <p class="text skill" data-aos="zoom-in" data-aos-delay="150">DOM</p>
+                        <p class="text skill" data-aos="zoom-in" data-aos-delay="250">REST API</p>
+                        <p class="text skill" data-aos="zoom-in" data-aos-delay="350">Websocket</p>
+                        <p class="text skill" data-aos="zoom-in" data-aos-delay="450">NPM</p>
+                        <p class="text skill" data-aos="zoom-in" data-aos-delay="550">Vue.js</p>
+                        <p class="text skill" data-aos="zoom-in" data-aos-delay="650">Vue CLI</p>
+                        <p class="text skill" data-aos="zoom-in" data-aos-delay="750">Vuex</p>
+                        <p class="text skill" data-aos="zoom-in" data-aos-delay="850">Vue Router</p>
                     </div>
                 </div>
                 <hr class="cross_line">
@@ -82,11 +82,11 @@
                         <p class="text">Other:</p>
                     </div>
                     <div class="skills">
-                        <p class="text skill">Figma</p>
-                        <p class="text skill">Photoshop</p>
-                        <p class="text skill">Git</p>
-                        <p class="text skill">GitHub</p>
-                        <p class="text skill">Heroku</p>
+                        <p class="text skill" data-aos="zoom-in" data-aos-delay="50">Figma</p>
+                        <p class="text skill" data-aos="zoom-in" data-aos-delay="150">Photoshop</p>
+                        <p class="text skill" data-aos="zoom-in" data-aos-delay="250">Git</p>
+                        <p class="text skill" data-aos="zoom-in" data-aos-delay="350">GitHub</p>
+                        <p class="text skill" data-aos="zoom-in" data-aos-delay="450">Heroku</p>
                     </div>
                 </div>
             </div>
@@ -117,15 +117,15 @@
                 </div>
             </div>
             <div class="content__soft_skills">
-                <h3 class="title soft_skills">Soft Skills</h3>
+                <h3 class="title soft_skills">Soft Skills:</h3>
                 <div class="skills">
-                    <p class="text skill">Self-management</p>
-                    <p class="text skill">Time management</p>
-                    <p class="text skill">Creativity</p>
-                    <p class="text skill">Attention to detail</p>
-                    <p class="text skill">Optimism</p>
-                    <p class="text skill">Self-motivation</p>
-                    <p class="text skill">Self-control</p>
+                    <p class="text skill" data-aos="zoom-in" data-aos-delay="50">Self-management</p>
+                    <p class="text skill" data-aos="zoom-in" data-aos-delay="150">Time management</p>
+                    <p class="text skill" data-aos="zoom-in" data-aos-delay="250">Creativity</p>
+                    <p class="text skill" data-aos="zoom-in" data-aos-delay="350">Attention to detail</p>
+                    <p class="text skill" data-aos="zoom-in" data-aos-delay="450">Optimism</p>
+                    <p class="text skill" data-aos="zoom-in" data-aos-delay="550">Self-motivation</p>
+                    <p class="text skill" data-aos="zoom-in" data-aos-delay="650">Self-control</p>
                 </div>
             </div>
             <div class="go_projects_btn">
@@ -150,25 +150,11 @@ export default {
 <style scoped lang="scss">
 .about_me {
     position: relative;
-    //     background-image: url('@/assets/aboutme_background.jpg');
-    //     background-size: cover;
-    //     background-position: center center;
-    //     background-repeat: no-repeat;
-    //     width: 100%;
-    //     height: 100vh;
-    //     opacity: 0;
-    //     visibility: hidden;
-    //     transition: all 0.5s ease 0s;
-
-    //     &.active {
-    //         opacity: 1;
-    //         visibility: visible;
-    //     }
 }
 
 .background {
     width: 100%;
-    height: 1500px;
+    height: 105rem;
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease 0s;
@@ -314,7 +300,206 @@ export default {
 
 .soft_skills {
     margin-bottom: 20px;
-    margin-top: 60px
+    margin-top: 60px;
+    text-align: left;
+}
+
+
+// Adaptive 
+@media(min-width: 1800px) {
+    .background {
+        height: 140rem;
+    }
+
+    .title {
+        font-size: 50px;
+    }
+
+    .text {
+        font-size: 30px;
+    }
+
+    .info__query {
+        font-size: 27px;
+        padding-bottom: 30px;
+    }
+
+    .social__img {
+        height: 50px;
+    }
+
+    .phone__link {
+        font-size: 30px;
+    }
+
+    .technical_skills {
+        margin-top: 30px;
+    }
+
+    .content__education_and_experience {
+        margin-top: 100px;
+    }
+
+    .soft_skills {
+        margin-top: 100px;
+    }
+
+    .go_projects_btn {
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+
+    .btn {
+
+        &::before {
+            padding: 20px 0px 20px 20px;
+        }
+
+        &::after {
+            padding: 20px 20px 20px 0px;
+        }
+    }
+}
+
+@media(max-width: 800px) {
+
+    .background {
+        height: 90rem;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .info__query {
+        font-size: 12px;
+    }
+
+    .social__img {
+        height: 20px;
+    }
+
+    .phone__link {
+        font-size: 14px;
+    }
+
+    .skill {
+        padding: 7px;
+    }
+
+    .btn {
+
+        &::before {
+            padding: 7px 0px 7px 7px;
+        }
+
+        &::after {
+            padding: 7px 7px 7px 0px;
+        }
+    }
+}
+
+@media(max-width: 680px) {
+
+    .background {
+        height: 135rem;
+    }
+
+    .content__info {
+        flex-direction: column;
+    }
+
+    .content__photo {
+        width: 30%;
+    }
+
+    .skills {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .technical_skills {
+        flex-direction: column;
+    }
+
+    .technology {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .about_me__content {
+        padding: 15px 25px;
+    }
+
+}
+
+@media(max-width: 450px) {
+
+
+
+    .content__photo {
+        width: 50%;
+    }
+
+    .background {
+        height: 120rem;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .text {
+        font-size: 12px;
+    }
+
+    .info__query {
+        font-size: 11px;
+    }
+
+    .social__img {
+        height: 15px;
+    }
+
+    .phone__link {
+        font-size: 12px;
+    }
+
+    .skill {
+        padding: 5px;
+    }
+
+    .btn {
+
+        &::before {
+            padding: 5px 0px 5px 5px;
+        }
+
+        &::after {
+            padding: 5px 5px 5px 0px;
+        }
+    }
+
+    .content__education_and_experience {
+        margin-top: 50px;
+    }
+
+    .soft_skills {
+        margin-top: 40px;
+    }
+
+    .go_projects_btn {
+        margin: 30px auto;
+    }
+
+    .about_me__content {
+        padding: 15px 10px;
+    }
 }
 </style>
 

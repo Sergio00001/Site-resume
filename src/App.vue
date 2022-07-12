@@ -4,9 +4,16 @@
 
 <script>
 import AboutMe from '@/components/AboutMe'
+import AOS from 'aos';
+
+import 'aos/dist/aos.css';
 
 export default {
-  components: { AboutMe }
+  components: { AboutMe },
+
+  mounted() {
+    AOS.init()
+  }
 }
 </script>
 
