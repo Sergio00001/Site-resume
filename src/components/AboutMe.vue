@@ -1,10 +1,10 @@
 <template>
     <div class="about_me">
         <img src="@/assets/aboutme_background.jpg" alt="background" class="background"
-            :class="{ 'active': showBackground === true }">
-        <div class="about_me__content" :class="{ 'active': showContent === true }">
+            :class="{ 'active': $store.state.about.showBackground === true }">
+        <div class="about_me__content" :class="{ 'active': $store.state.about.showContent === true }">
             <div class="content__title">
-                <h2 class="title">Digtyar Sergey</h2>
+                <h2 class="title">DIGTYAR SERGIY</h2>
             </div>
             <div class="content__info">
                 <div class="content__photo">
@@ -53,8 +53,10 @@
                         <p class="text skill">Materialize</p>
                         <p class="text skill">Responsive Layout</p>
                         <p class="text skill">Adaptive Layout</p>
-                        <p class="text skill">Figma</p>
-                        <p class="text skill">Photoshop</p>
+                        <p class="text skill">Flexbox</p>
+                        <p class="text skill">Grid</p>
+                        <p class="text skill">Mobile First</p>
+                        <p class="text skill">Desktop First</p>
                     </div>
                 </div>
                 <hr class="cross_line">
@@ -66,71 +68,110 @@
                         <p class="text skill">ES6+</p>
                         <p class="text skill">DOM</p>
                         <p class="text skill">REST API</p>
-                        <p class="text skill"></p>
-                        <p class="text skill"></p>
-                        <p class="text skill"></p>
-                        <p class="text skill"></p>
+                        <p class="text skill">Websocket</p>
+                        <p class="text skill">NPM</p>
+                        <p class="text skill">Vue.js</p>
+                        <p class="text skill">Vue CLI</p>
+                        <p class="text skill">Vuex</p>
+                        <p class="text skill">Vue Router</p>
                     </div>
                 </div>
+                <hr class="cross_line">
+                <div class="technical_skills">
+                    <div class="technology">
+                        <p class="text">Other:</p>
+                    </div>
+                    <div class="skills">
+                        <p class="text skill">Figma</p>
+                        <p class="text skill">Photoshop</p>
+                        <p class="text skill">Git</p>
+                        <p class="text skill">GitHub</p>
+                        <p class="text skill">Heroku</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content__education_and_experience">
+                <div class="education_and_experience">
+                    <h3 class="title education_and_experience__title">Education:</h3>
+                    <div class="education_and_experience__text">
+                        <p class="text">Odessa National Mechnikov University (2013 - 2017)</p>
+                        <p class="text">Specialty: Journalism</p>
+                    </div>
+                </div>
+                <div class="education_and_experience">
+                    <h3 class="title education_and_experience__title">Work Experience:</h3>
+                    <div class="education_and_experience__text">
+                        <p class="text">Quest Room (2014 - 2016)</p>
+                        <p class="text">Position: Owner</p>
+                    </div>
+                    <div class="education_and_experience__text">
+                        <p class="text">Professional DJ & Sound Producer (2016-2019)</p>
+                    </div>
+                    <div class="education_and_experience__text">
+                        <p class="text">Music studio (2017-2018)</p>
+                        <p class="text">Position: DJ teacher</p>
+                    </div>
+                    <div class="education_and_experience__text">
+                        <p class="text">Fumigation Company (2018-2022)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content__soft_skills">
+                <h3 class="title soft_skills">Soft Skills</h3>
+                <div class="skills">
+                    <p class="text skill">Self-management</p>
+                    <p class="text skill">Time management</p>
+                    <p class="text skill">Creativity</p>
+                    <p class="text skill">Attention to detail</p>
+                    <p class="text skill">Optimism</p>
+                    <p class="text skill">Self-motivation</p>
+                    <p class="text skill">Self-control</p>
+                </div>
+            </div>
+            <div class="go_projects_btn">
+                <div class="btn"></div>
             </div>
         </div>
     </div>
 </template>
 <script>
 export default {
-    data() {
-        return {
-            showContent: false,
-            showBackground: false
-        }
-    },
-
-    methods: {
-        setShowContent() {
-            this.showContent = true
-        },
-
-        setShowBackground() {
-            this.showBackground = true
-        }
-    },
-
     mounted() {
         setTimeout(() => {
-            this.setShowBackground()
+            this.$store.commit('setShowBackground')
         }, 100);
 
         setTimeout(() => {
-            this.setShowContent()
-        }, 300);
+            this.$store.commit('setShowContent')
+        }, 400);
     }
 }
 </script>
 <style scoped lang="scss">
-// .about_me {
-//     position: relative;
-//     background-image: url('@/assets/aboutme_background.jpg');
-//     background-size: cover;
-//     background-position: center center;
-//     background-repeat: no-repeat;
-//     width: 100%;
-//     height: 100vh;
-//     opacity: 0;
-//     visibility: hidden;
-//     transition: all 0.5s ease 0s;
+.about_me {
+    position: relative;
+    //     background-image: url('@/assets/aboutme_background.jpg');
+    //     background-size: cover;
+    //     background-position: center center;
+    //     background-repeat: no-repeat;
+    //     width: 100%;
+    //     height: 100vh;
+    //     opacity: 0;
+    //     visibility: hidden;
+    //     transition: all 0.5s ease 0s;
 
-//     &.active {
-//         opacity: 1;
-//         visibility: visible;
-//     }
-// }
+    //     &.active {
+    //         opacity: 1;
+    //         visibility: visible;
+    //     }
+}
 
 .background {
     width: 100%;
     height: 1500px;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.5s ease 0s;
+    transition: all 0.3s ease 0s;
 
     &.active {
         opacity: 1;
@@ -143,15 +184,18 @@ export default {
     width: 90%;
     background-color: white;
     left: 50%;
-    top: -100%;
-    transform: translate(-50%, 0px);
-    transition: all 2s ease 0s;
-    padding: 25px 50px;
+    bottom: 50%;
+    transform: translate(-50%, 0);
+    transition: all 1s ease 0.3s;
+    padding: 50px 50px;
+    opacity: 0;
+    visibility: hidden;
 
     &.active {
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        visibility: visible;
+        opacity: 1;
+        bottom: 50%;
+        transform: translate(-50%, 50%);
     }
 }
 
@@ -163,7 +207,7 @@ export default {
     display: flex;
     align-items: center;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .content__photo {
@@ -202,7 +246,7 @@ export default {
     transition: all 0.5s ease 0s;
 
     &:hover {
-        height: 35px;
+        transform: scale(1.5);
     }
 }
 
@@ -242,6 +286,35 @@ export default {
     border-radius: 14px;
     color: white;
     background-color: black;
+}
+
+.content__education_and_experience {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.education_and_experience {
+    padding: 10px;
+    border: 1px solid black;
+
+    &:last-child {
+        border-left: 0px;
+    }
+}
+
+.education_and_experience__title {
+    text-align: left;
+}
+
+.education_and_experience__text {
+    margin-top: 20px;
+}
+
+
+.soft_skills {
+    margin-bottom: 20px;
+    margin-top: 60px
 }
 </style>
 
