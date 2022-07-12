@@ -39,8 +39,18 @@ a {
 
 .btn {
     position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.go_projects_btn {
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+
 
     &:hover {
         transform: scale(1.1);
@@ -83,12 +93,4 @@ a {
     &:hover::after {
         margin-left: 0px;
     }
-}
-
-.go_projects_btn {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 25px;
 }
