@@ -231,9 +231,6 @@ export default {
     height: 30px;
     transition: all 0.5s ease 0s;
 
-    &:hover {
-        transform: scale(1.5);
-    }
 }
 
 .phone__link {
