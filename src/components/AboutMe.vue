@@ -440,8 +440,6 @@ export default {
 
 @media(max-width: 450px) {
 
-
-
     .content__photo {
         width: 50%;
     }
@@ -464,6 +462,10 @@ export default {
 
     .social__img {
         height: 15px;
+    }
+
+    .social__link {
+        margin-left: 5px;
     }
 
     .phone__link {
