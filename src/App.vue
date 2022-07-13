@@ -12,9 +12,7 @@ export default {
   components: { AboutMe },
 
   mounted() {
-    AOS.init({
-      anchorPlacement: 'bottom-bottom'
-    })
+    AOS.init()
   }
 }
 </script>
