@@ -129,7 +129,7 @@
                 </div>
             </div>
             <div class="go_projects_btn">
-                <div class="btn"></div>
+                <button class="btn"></button>
             </div>
         </div>
     </div>
@@ -140,10 +140,7 @@ export default {
         setTimeout(() => {
             this.$store.commit('setShowBackground')
         }, 100);
-
-        setTimeout(() => {
-            this.$store.commit('setShowContent')
-        }, 400);
+        this.$store.commit('setShowContent')
     }
 }
 </script>
@@ -170,18 +167,16 @@ export default {
     width: 90%;
     background-color: white;
     left: 50%;
-    bottom: 50%;
-    transform: translate(-50%, 0);
-    transition: all 1s ease 0.3s;
+    top: 0;
+    transform: translate(-50%, -100%);
+    transition: all 1.5s ease-in-out 0.5s;
     padding: 50px 50px;
-    opacity: 0;
     visibility: hidden;
 
     &.active {
         visibility: visible;
-        opacity: 1;
-        bottom: 50%;
-        transform: translate(-50%, 50%);
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 

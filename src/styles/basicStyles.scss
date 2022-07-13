@@ -40,24 +40,30 @@ a {
 .btn {
     position: absolute;
     opacity: 0;
-    visibility: hidden;
+    width: 105%;
+    height: 50px;
+    bottom: -80%;
+    left: 0;
+    cursor: pointer;
 }
 
 .go_projects_btn {
     position: relative;
+    display: inline-block;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 25px;
-    cursor: pointer;
     transition: all 0.3s ease 0s;
+    left: 50%;
+    transform: translateX(-50%);
 
 
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.1) translateX(-50%);
     }
 
     &:active {
-        transform: scale(0.9);
+        transform: scale(0.9) translateX(-50%);
     }
 
     &::before {
