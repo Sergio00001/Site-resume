@@ -167,7 +167,10 @@
                 </div>
             </div>
             <div class="go_projects_btn">
-                <button class="btn"></button>
+                <button
+                    class="btn"
+                    @click="scrolling"
+                ></button>
             </div>
         </div>
     </div>
@@ -182,6 +185,15 @@ export default {
         setTimeout(() => {
             this.$store.commit('setShowContent')
         }, 0);
+    },
+
+    methods: {
+        scrolling() {
+            document.documentElement.scrollTo({
+                top: 1750,
+                behavior: 'smooth'
+            })
+        }
     }
 }
 </script>
@@ -434,15 +446,12 @@ export default {
         padding: 7px;
     }
 
-    .btn {
+    .content__soft_skills {
+        margin-bottom: 20px;
+    }
 
-        &::before {
-            padding: 7px 0px 7px 7px;
-        }
-
-        &::after {
-            padding: 7px 7px 7px 0px;
-        }
+    .go_projects_btn {
+        display: none;
     }
 }
 

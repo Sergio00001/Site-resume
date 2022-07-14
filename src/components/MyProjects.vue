@@ -380,7 +380,7 @@ export default {
     }
 
     .project__link {
-        font-size: 6px;
+        font-size: 10px;
         padding: 5px;
 
         &:last-child {
