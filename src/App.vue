@@ -1,19 +1,14 @@
 <template>
   <AboutMe />
+  <MyProjects />
 </template>
 
 <script>
 import AboutMe from '@/components/AboutMe'
-import AOS from 'aos';
-
-import 'aos/dist/aos.css';
+import MyProjects from '@/components/MyProjects'
 
 export default {
-  components: { AboutMe },
-
-  mounted() {
-    AOS.init()
-  }
+  components: { AboutMe, MyProjects },
 }
 </script>
 

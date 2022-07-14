@@ -1,33 +1,71 @@
 <template>
     <div class="about_me">
-        <img src="@/assets/aboutme_background.jpg" alt="background" class="background"
-            :class="{ 'active': $store.state.about.showBackground === true }">
-        <div class="about_me__content" :class="{ 'active': $store.state.about.showContent === true }">
+        <img
+            src="@/assets/aboutme_background.jpg"
+            alt="background"
+            class="background"
+            :class="{ 'active': $store.state.about.showBackground === true }"
+        >
+        <div
+            class="about_me__content"
+            :class="{ 'active': $store.state.about.showContent === true }"
+        >
             <div class="content__title">
                 <h2 class="title">DIGTYAR SERGIY</h2>
             </div>
             <div class="content__info">
                 <div class="content__photo">
-                    <img src="@/assets/avatar_template.jpg" alt="photo" class="photo">
+                    <img
+                        src="@/assets/avatar.jpg"
+                        alt="photo"
+                        class="photo"
+                    >
                 </div>
                 <div class="content__details">
-                    <p class="info__query">Position: <span class="text"><strong>Junior Front-end
-                                developer</strong></span></p>
+                    <p class="info__query">Position: <span class="text"><strong>Junior Front-end developer</strong></span></p>
                     <p class="info__query">Age: <span class="text"><strong>26</strong></span></p>
-                    <p class="info__query">City: <span class="text"><strong>Lviv (also interested in remote
-                                work)</strong></span></p>
-                    <p class="info__query">Phone: <span class="text"><strong><a href="tel:+380634706929"
-                                    class="phone__link">+38(063)470-69-29</a></strong></span></p>
+                    <p class="info__query">City: <span class="text"><strong>Lviv (also interested in remote work)</strong></span></p>
+                    <p class="info__query">Phone: <span class="text"><strong><a
+                                    href="tel:+380634706929"
+                                    class="phone__link"
+                                >+38(063)470-69-29</a></strong></span></p>
                     <div class="social__links">
                         <p class="info__query">Social Links:</p>
-                        <a href="https://t.me/digtyar21" target="_blank" class="social__link"><img
-                                src="@/assets/telegram_logo.png" alt="telegram" class="social__img"></a>
-                        <a href="https://github.com/Sergio00001" target="_blank" class="social__link"><img
-                                src="@/assets/github_logo.png" alt="github" class="social__img"></a>
-                        <a href="https://instagram.com/digtyar1" target="_blank" class="social__link"><img
-                                src="@/assets/instagram_logo.png" alt="instagram" class="social__img"></a>
-                        <a href="mailto:digtyarsergio@gmail.com" class="social__link"><img src="@/assets/gmail_logo.png"
-                                alt="gmail" class="social__img"></a>
+                        <a
+                            href="https://t.me/digtyar21"
+                            target="_blank"
+                            class="social__link"
+                        ><img
+                                src="@/assets/telegram_logo.png"
+                                alt="telegram"
+                                class="social__img"
+                            ></a>
+                        <a
+                            href="https://github.com/Sergio00001"
+                            target="_blank"
+                            class="social__link"
+                        ><img
+                                src="@/assets/github_logo.png"
+                                alt="github"
+                                class="social__img"
+                            ></a>
+                        <a
+                            href="https://instagram.com/digtyar1"
+                            target="_blank"
+                            class="social__link"
+                        ><img
+                                src="@/assets/instagram_logo.png"
+                                alt="instagram"
+                                class="social__img"
+                            ></a>
+                        <a
+                            href="mailto:digtyarsergio@gmail.com"
+                            class="social__link"
+                        ><img
+                                src="@/assets/gmail_logo.png"
+                                alt="gmail"
+                                class="social__img"
+                            ></a>
                     </div>
                 </div>
             </div>
@@ -119,13 +157,13 @@
             <div class="content__soft_skills">
                 <h3 class="title soft_skills">Soft Skills:</h3>
                 <div class="skills">
-                    <p class="text skill" data-aos="fade-down" data-aos-delay="50">Self-management</p>
-                    <p class="text skill" data-aos="fade-up" data-aos-delay="150">Time management</p>
-                    <p class="text skill" data-aos="fade-down" data-aos-delay="250">Creativity</p>
-                    <p class="text skill" data-aos="fade-up" data-aos-delay="350">Attention to detail</p>
-                    <p class="text skill" data-aos="fade-down" data-aos-delay="450">Optimism</p>
-                    <p class="text skill" data-aos="fade-up" data-aos-delay="550">Self-motivation</p>
-                    <p class="text skill" data-aos="fade-down" data-aos-delay="650">Self-control</p>
+                    <p class="text skill">Self-management</p>
+                    <p class="text skill">Time management</p>
+                    <p class="text skill">Creativity</p>
+                    <p class="text skill">Attention to detail</p>
+                    <p class="text skill">Optimism</p>
+                    <p class="text skill">Self-motivation</p>
+                    <p class="text skill">Self-control</p>
                 </div>
             </div>
             <div class="go_projects_btn">
@@ -140,7 +178,10 @@ export default {
         setTimeout(() => {
             this.$store.commit('setShowBackground')
         }, 100);
-        this.$store.commit('setShowContent')
+
+        setTimeout(() => {
+            this.$store.commit('setShowContent')
+        }, 0);
     }
 }
 </script>
@@ -238,9 +279,9 @@ export default {
     transition: all 0.3s ease 0s;
 
     &:hover {
-        color: teal;
+        color: #41b884;
         font-size: 18px;
-        border-bottom: 1px solid teal;
+        border-bottom: 1px solid #41b884;
     }
 }
 
@@ -302,8 +343,13 @@ export default {
 
 // Adaptive 
 @media(min-width: 1800px) {
+
+    .about_me__content {
+        padding: 50px 100px;
+    }
+
     .background {
-        height: 140rem;
+        height: 160rem;
     }
 
     .title {
@@ -321,6 +367,7 @@ export default {
 
     .social__img {
         height: 50px;
+        width: 50px;
     }
 
     .phone__link {
