@@ -1,3 +1,4 @@
+<!-- Вернуть кнопку, убрать поле с проектами и вернуть страницу с проектами -->
 <template>
     <div class="about_me">
         <img
@@ -164,42 +165,6 @@
                     <p class="text skill">Optimism</p>
                     <p class="text skill">Self-motivation</p>
                     <p class="text skill">Self-control</p>
-                </div>
-            </div>
-            <div class="content__projects">
-                <h3 class="title projects">My Projects:</h3>
-                <p class="projects__text">*Please tap on project name</p>
-                <div class="skills">
-                    <a
-                        href="https://sergio00001.github.io/Materialize_Cootels/"
-                        target="_blank"
-                        class="text skill"
-                    >Cootels</a>
-                    <a
-                        href="https://sergio00001.github.io/WebSockets-Chat.Vue/"
-                        target="_blank"
-                        class="text skill"
-                    >Secret Chat</a>
-                    <a
-                        href="https://sergio00001.github.io/Luxury-Hotels_Vue/"
-                        target="_blank"
-                        class="text skill"
-                    >Luxury Hotels</a>
-                    <a
-                        href="https://sergio00001.github.io/Landing-with-animations-on-Vue/"
-                        target="_blank"
-                        class="text skill"
-                    >Landing on Vue</a>
-                    <a
-                        href="https://sergio00001.github.io/WhiteBIT_Bootstrap/"
-                        target="_blank"
-                        class="text skill"
-                    >WhiteBIT</a>
-                    <a
-                        href="https://sergio00001.github.io/send-mail-form-with-validation/"
-                        target="_blank"
-                        class="text skill"
-                    >SendMailForm</a>
                 </div>
             </div>
             <div class="go_projects_btn">

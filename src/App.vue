@@ -1,6 +1,6 @@
 <template>
   <AboutMe />
-  <!-- <MyProjects /> -->
+  <MyProjects />
 </template>
 
 <script>
