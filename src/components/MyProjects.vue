@@ -366,13 +366,14 @@ export default {
     }
 
     .project__technology {
-        font-size: 8px;
+        font-size: 11px;
         margin-top: 5px;
         margin-left: 5px;
+        width: 150px;
     }
 
     .technology__stack {
-        font-size: 7px;
+        font-size: 9px;
     }
 
     .project__links {
@@ -380,8 +381,9 @@ export default {
     }
 
     .project__link {
-        font-size: 10px;
-        padding: 5px;
+        font-size: 9px;
+        padding: 4px;
+        text-align: center;
 
         &:last-child {
             margin-top: 5px;
